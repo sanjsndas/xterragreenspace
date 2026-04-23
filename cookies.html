@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Xterra Green Space | Cookies Policy – Your Digital Garden & Privacy</title>
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Poppins & Playfair Display (matching main theme) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef9e6;
+            color: #2c2b28;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --yellow-soft: #FFF9C4;
+            --yellow-bright: #FFD966;
+            --yellow-deep: #F7B32B;
+            --yellow-gold: #E8A317;
+            --dark-charcoal: #2E2C2A;
+            --leaf-green: #4B6A3B;
+            --highlight: #FFC107;
+            --privacy-paper: #FFFFF5;
+        }
+
+        h1, h2, h3, h4, .logo, .nav-links a, .footer-col h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Header identical to global style */
+        header {
+            background: linear-gradient(135deg, #FFE68F 0%, #FFD966 100%);
+            padding: 20px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #2E5C1E;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: #5a3e1b;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #3b2a1f;
+            transition: 0.3s;
+            font-size: 1.05rem;
+        }
+        .nav-links a:hover {
+            color: #1f4f1a;
+            border-bottom: 2px solid #1f4f1a;
+        }
+
+        /* Cookies hero (playful but clear) */
+        .cookies-hero {
+            background: linear-gradient(120deg, #FFF6E2, #FFEFCF);
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom: 2px solid #FFDE9C;
+        }
+        .cookies-hero h1 {
+            font-size: 3rem;
+            color: #3B621F;
+            margin-bottom: 15px;
+        }
+        .cookies-hero p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto;
+            color: #5c4a2e;
+        }
+        .last-updated {
+            background: #FFF2CF;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            margin-top: 20px;
+            color: #735f38;
+        }
+
+        /* main cookies card style - matching privacy */
+        .cookies-card {
+            background: var(--privacy-paper);
+            border-radius: 48px;
+            margin: 70px 0;
+            padding: 48px 50px;
+            box-shadow: 0 25px 40px rgba(0,0,0,0.05);
+            border: 1px solid #FFE2A4;
+        }
+
+        .cookies-card h2 {
+            font-size: 1.9rem;
+            color: #5e4017;
+            margin: 1.5em 0 0.8em 0;
+            border-left: 8px solid #F7B32B;
+            padding-left: 20px;
+        }
+        .cookies-card h2:first-of-type {
+            margin-top: 0;
+        }
+        .cookies-card h3 {
+            font-size: 1.4rem;
+            color: #4B6A3B;
+            margin: 1.2em 0 0.6em 0;
+            font-weight: 600;
+        }
+        .cookies-card p {
+            font-size: 1.02rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #2e2c29;
+        }
+        .cookies-card ul, .cookies-card ol {
+            margin: 1rem 0 1.2rem 2rem;
+            line-height: 1.6;
+        }
+        .cookies-card li {
+            margin-bottom: 0.5rem;
+        }
+        .cookies-card a {
+            color: #4B6A3B;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .cookies-card a:hover {
+            color: #E8A317;
+        }
+        .highlight-badge {
+            background: #FFEBB7;
+            border-radius: 60px;
+            padding: 12px 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+            color: #3B621F;
+        }
+        .divider-flower {
+            text-align: center;
+            margin: 40px 0 20px;
+            color: #FFD58C;
+            font-size: 1.2rem;
+        }
+        .contact-reminder {
+            background: #FFF3DF;
+            border-radius: 40px;
+            padding: 25px;
+            margin-top: 40px;
+            text-align: center;
+            border: 1px solid #FFE2B0;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: #FFFDF5;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .cookie-table th, .cookie-table td {
+            border: 1px solid #FFE2B5;
+            padding: 14px 16px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .cookie-table th {
+            background-color: #FFEFD3;
+            color: #5e4017;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+        .cookie-table td {
+            background-color: #FFFFF8;
+        }
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .cookies-hero h1 {
+                font-size: 2.2rem;
+            }
+            .cookies-card {
+                padding: 30px 24px;
+            }
+            .cookies-card h2 {
+                font-size: 1.6rem;
+            }
+            .cookie-table th, .cookie-table td {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+            }
+        }
+        .btn-cookie-pref {
+            display: inline-block;
+            background: #4B6A3B;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+            margin-top: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .btn-cookie-pref:hover {
+            background: #E8A317;
+            color: #2c2b28;
+        }
+        footer {
+            background: #2C2B26;
+            color: #FDEBB3;
+            padding: 50px 0 20px;
+            border-top: 8px solid #F7B32B;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #FFD966;
+        }
+        .footer-col p, .footer-col i {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #5c4e34;
+            padding-top: 25px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <div class="logo">
+            <h1>🌻 Xterra Green Space</h1>
+            <p>where yellow blooms & evergreen wisdom meet</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html" style="border-bottom: 2px solid #1f4f1a;">Cookies Policy</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="cookies-hero">
+        <div class="container">
+            <h1><i class="fas fa-cookie-bite"></i> Cookies & Digital Seeds Policy</h1>
+            <p>We use tiny, friendly crumbs of data to make your experience smoother, more personal, and as delightful as a sunlit garden.</p>
+            <div class="last-updated"><i class="far fa-calendar-alt"></i> Last updated: April 21, 2026</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cookies-card">
+            <div class="highlight-badge">
+                <i class="fas fa-seedling"></i> Your choice matters — we respect every single cookie crumb.
+            </div>
+            <p>Welcome to the Xterra Green Space Cookies Policy. Like a well-tended greenhouse, our website uses cookies and similar tracking technologies to ensure functionality, analyze visitor trends, and remember your preferences. This policy explains what cookies are, which ones we use, and how you can manage them. By continuing to browse our website, you agree to our use of cookies as described below, unless you have set your browser to reject them.</p>
+
+            <h2><i class="fas fa-question-circle"></i> What are cookies?</h2>
+            <p>Cookies are small text files stored on your device (computer, tablet, or mobile) when you visit a website. They help the website recognize your device, remember your actions and preferences (like language or region), and improve your browsing experience. Think of them as little packets of sunflower seeds that help us grow a better experience for you. We also use similar technologies such as local storage and pixel tags.</p>
+
+            <h2><i class="fas fa-chart-line"></i> How we use cookies</h2>
+            <p>At Xterra Green Space, we use cookies for the following purposes, always with respect for your privacy:</p>
+            <ul>
+                <li><strong>Strictly Necessary Cookies:</strong> Essential for the website to function (e.g., navigating pages, accessing secure areas, managing cookie consent). Without these, the site may break.</li>
+                <li><strong>Performance & Analytics Cookies:</strong> Help us understand how visitors interact with our site (most visited pages, bounce rates, garden content popularity). We use Google Analytics to collect anonymous aggregate data.</li>
+                <li><strong>Functional Cookies:</strong> Remember your preferences such as language, region, or if you have previously closed a pop-up notice about workshops.</li>
+                <li><strong>Targeting/Advertising Cookies:</strong> We do NOT sell your data, but we may use limited advertising cookies from social media (e.g., Instagram, Facebook) to show you relevant gardening content if you have previously visited our site. These are set only with your consent via cookie banner.</li>
+            </ul>
+            <p>We never use invasive cookies for purposes beyond our stated garden mission.</p>
+
+            <h2><i class="fas fa-table-list"></i> Detailed Cookie Inventory</h2>
+            <p>Below is a transparent list of the main cookies used on the Xterra Green Space website. Note that third-party cookies are managed by their respective providers.</p>
+            <table class="cookie-table">
+                <thead>
+                    <tr><th>Cookie Name</th><th>Provider</th><th>Purpose</th><th>Duration</th><th>Type</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>cookie_consent</td><td>Xterra Green Space</td><td>Stores your cookie preference (accepted/rejected)</td><td>12 months</td><td>Necessary</td></tr>
+                    <tr><td>session_id</td><td>Xterra Green Space</td><td>Maintains your session while browsing the website</td><td>Session</td><td>Necessary</td></tr>
+                    <tr><td>language_pref</td><td>Xterra Green Space</td><td>Remembers your chosen language (e.g., English)</td><td>6 months</td><td>Functional</td></tr>
+                    <tr><td>_ga</td><td>Google Analytics</td><td>Distinguishes unique users for site analytics</td><td>2 years</td><td>Analytics</td></tr>
+                    <tr><td>_gid</td><td>Google Analytics</td><td>Used to throttle request rate and track user sessions</td><td>24 hours</td><td>Analytics</td></tr>
+                    <tr><td>gardener_zip</td><td>Xterra Green Space</td><td>Remembers your zip code for local workshop suggestions (if provided)</td><td>30 days</td><td>Functional</td></tr>
+                    <tr><td>last_visit_hint</td><td>Xterra Green Space</td><td>Personalizes welcome message on return visits</td><td>90 days</td><td>Functional</td></tr>
+                </tbody>
+            </table>
+            <p>Third-party cookies from Google Analytics may be subject to their own privacy policies. We have enabled IP anonymization to protect your identity.</p>
+
+            <h2><i class="fas fa-sliders-h"></i> Your Consent & Control</h2>
+            <p>When you first visit our website, a cookie banner appears, allowing you to accept or reject non-essential cookies (analytics & functional preferences). You can change your mind at any time. Here’s how to manage cookies:</p>
+            <ul>
+                <li><strong>Browser Settings:</strong> Most web browsers allow you to control cookies through their settings. You can block all cookies, delete existing cookies, or set alerts before cookies are placed. Instructions for Chrome, Firefox, Safari, and Edge are available in your browser’s help section. However, blocking necessary cookies may impair website functionality.</li>
+                <li><strong>Opt-Out of Analytics:</strong> You can disable Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</li>
+                <li><strong>Our Preference Tool:</strong> Use the button below to open our simple cookie preference interface and update your choices at any time.</li>
+            </ul>
+            <div style="text-align: center; margin: 20px 0 10px;">
+                <button id="openCookiePrefBtn" class="btn-cookie-pref"><i class="fas fa-cog"></i> Manage Cookie Preferences</button>
+            </div>
+            <p><em>Note: If you disable certain cookies, you may not be able to access some personalized features like saved workshop recommendations or local gardening tips.</em></p>
+
+            <h2><i class="fas fa-clock"></i> Retention of Cookie Data</h2>
+            <p>Cookie lifespans vary based on their purpose. Session cookies expire when you close your browser. Persistent cookies (like _ga or gardener_zip) remain for the period indicated in the table above. After that, they are automatically removed. You can also manually delete cookies via your browser at any time.</p>
+
+            <h2><i class="fas fa-gavel"></i> Updates to This Cookies Policy</h2>
+            <p>We may revise this Cookies Policy from time to time to reflect changes in technology, legal requirements, or our operations. Any material changes will be communicated via a notice on our homepage or by email (if we have your address). The “Last updated” date at the top of this page indicates when the policy was last revised. We encourage you to review it periodically.</p>
+
+            <div class="divider-flower">
+                <i class="fas fa-sun"></i> <i class="fas fa-leaf"></i> <i class="fas fa-cookie"></i>
+            </div>
+
+            <h2><i class="fas fa-hand-peace"></i> More About Do Not Track (DNT)</h2>
+            <p>Some browsers have a “Do Not Track” feature that signals to websites that you do not wish to be tracked. Our website currently does not respond to DNT signals because there is no universally accepted standard for how to interpret them. However, we already limit data collection to only what is described in this policy and provide granular controls as explained above. You can always adjust cookie settings manually.</p>
+
+            <h2><i class="fas fa-globe-americas"></i> Third-Party Links & Services</h2>
+            <p>Our website may include links to external gardening resources, seed suppliers, or social media platforms. Those websites have their own cookie and privacy policies, and we are not responsible for their practices. We encourage you to read the policies of any third-party sites you visit.</p>
+
+            <div class="contact-reminder">
+                <i class="fas fa-seedling" style="font-size: 2rem; color: #F7B32B;"></i>
+                <h3 style="margin: 10px 0;">🍪 Have Cookie Questions? Ask the Gardeners</h3>
+                <p>If anything about our cookie usage remains unclear — or you'd like to request a copy of the data collected via cookies — please contact our Data Protection Gardener.</p>
+                <p><strong><i class="fas fa-envelope"></i> privacy@xterragreenspace.com</strong> &nbsp;|&nbsp; <strong><i class="fas fa-phone"></i> +1 (800) 589-2378</strong><br>
+                <strong>Mail:</strong> Attn: Privacy Office, 1420 Golden Harvest Lane, MeadowVista, CA 94123, USA</p>
+                <p style="margin-top: 12px; font-size: 0.9rem;">We’ll respond within 5 business days. Your digital footprint matters to us as much as every sunflower seed.</p>
+            </div>
+            <p style="margin-top: 35px; font-style: italic; border-left: 4px solid #FFD966; padding-left: 20px;">Xterra Green Space believes in transparent, low-impact digital practices — just like our approach to regenerative gardening. Enjoy a cookie (the edible kind) while you browse!</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>Xterra Green Space</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 1420 Golden Harvest Lane, MeadowVista, CA 94123, USA</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (800) 589-2378</p>
+            <p><i class="fas fa-envelope"></i> hello@xterragreenspace.com</p>
+        </div>
+        <div class="footer-col">
+            <h3>Yellow Resources</h3>
+            <p><i class="fas fa-leaf"></i> Seed Library</p>
+            <p><i class="fas fa-sun"></i> SunCalc Pro</p>
+            <p><i class="fas fa-hand-sparkles"></i> Soil Testing Kits</p>
+        </div>
+        <div class="footer-col">
+            <h3>Visit Us</h3>
+            <p>Mon-Fri: 9am - 6pm</p>
+            <p>Sat: 10am - 4pm (Workshop Days)</p>
+            <p><i class="fab fa-instagram"></i> @xterragreenspace</p>
+        </div>
+    </div>
+    <div class="container copyright">
+        <p>&copy; 2025 Xterra Green Space — Cultivating golden futures. All gardening wisdom shared freely.</p>
+    </div>
+</footer>
+
+<!-- interactive cookie preference modal simulation + dynamic year -->
+<script>
+    (function() {
+        // Dynamic copyright year update
+        const yearSpan = document.querySelector('.copyright p');
+        if(yearSpan) {
+            const currentYear = new Date().getFullYear();
+            if(currentYear !== 2025) {
+                yearSpan.innerHTML = `&copy; ${currentYear} Xterra Green Space — Cultivating golden futures. All gardening wisdom shared freely.`;
+            }
+        }
+
+        // Build simple cookie preference modal (non-intrusive, respectful)
+        function createPreferenceModal() {
+            const modalDiv = document.createElement('div');
+            modalDiv.id = 'cookiePrefModal';
+            modalDiv.style.position = 'fixed';
+            modalDiv.style.top = '0';
+            modalDiv.style.left = '0';
+            modalDiv.style.width = '100%';
+            modalDiv.style.height = '100%';
+            modalDiv.style.backgroundColor = 'rgba(0,0,0,0.5)';
+            modalDiv.style.display = 'flex';
+            modalDiv.style.alignItems = 'center';
+            modalDiv.style.justifyContent = 'center';
+            modalDiv.style.zIndex = '9999';
+            modalDiv.style.backdropFilter = 'blur(3px)';
+            
+            const modalContent = document.createElement('div');
+            modalContent.style.backgroundColor = '#FFFFF5';
+            modalContent.style.maxWidth = '500px';
+            modalContent.style.width = '90%';
+            modalContent.style.borderRadius = '48px';
+            modalContent.style.padding = '30px 28px';
+            modalContent.style.boxShadow = '0 20px 35px rgba(0,0,0,0.2)';
+            modalContent.style.border = '1px solid #FFD966';
+            modalContent.style.fontFamily = "'Poppins', sans-serif";
+            
+            modalContent.innerHTML = `
+                <h3 style="font-family: 'Playfair Display', serif; color: #3B621F; margin-bottom: 12px;"><i class="fas fa-sliders-h"></i> Your cookie preferences</h3>
+                <p style="margin-bottom: 20px;">You can choose which non-essential cookies to enable. Essential cookies are always active to keep the website running.</p>
+                <div style="margin-bottom: 18px;">
+                    <label style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px; cursor: pointer;">
+                        <input type="checkbox" id="prefAnalytics" checked> <strong>Analytics cookies</strong> (Google Analytics)
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px; cursor: pointer;">
+                        <input type="checkbox" id="prefFunctional" checked> <strong>Functional cookies</strong> (language, zip code, preferences)
+                    </label>
+                    <p style="font-size: 0.85rem; color: #735f38;"><i class="fas fa-info-circle"></i> Your choices will be stored for 12 months.</p>
+                </div>
+                <div style="display: flex; gap: 14px; justify-content: flex-end;">
+                    <button id="savePrefBtn" style="background:#4B6A3B; color:white; border:none; padding: 8px 20px; border-radius: 40px; font-weight:600; cursor:pointer;">Save preferences</button>
+                    <button id="closePrefModalBtn" style="background:#E3D6B5; border:none; padding: 8px 20px; border-radius: 40px; cursor:pointer;">Close</button>
+                </div>
+            `;
+            modalDiv.appendChild(modalContent);
+            document.body.appendChild(modalDiv);
+            
+            const savedAnalytics = localStorage.getItem('cookie_pref_analytics');
+            const savedFunctional = localStorage.getItem('cookie_pref_functional');
+            if (savedAnalytics !== null) document.getElementById('prefAnalytics').checked = savedAnalytics === 'true';
+            if (savedFunctional !== null) document.getElementById('prefFunctional').checked = savedFunctional === 'true';
+            
+            document.getElementById('savePrefBtn').addEventListener('click', () => {
+                const analyticsPref = document.getElementById('prefAnalytics').checked;
+                const functionalPref = document.getElementById('prefFunctional').checked;
+                localStorage.setItem('cookie_pref_analytics', analyticsPref);
+                localStorage.setItem('cookie_pref_functional', functionalPref);
+                // Show temporary message (simple alert, but friendly)
+                alert('🍪 Preferences saved! Non-essential cookies will respect your choice on next visit. Thank you for your transparency.');
+                modalDiv.remove();
+                // In real implementation, you'd dynamically block/unblock scripts. For demo, we store.
+                if (!analyticsPref) {
+                    console.log('Analytics disabled per user preference');
+                }
+            });
+            document.getElementById('closePrefModalBtn').addEventListener('click', () => {
+                modalDiv.remove();
+            });
+            modalDiv.addEventListener('click', (e) => {
+                if(e.target === modalDiv) modalDiv.remove();
+            });
+        }
+        
+        const prefBtn = document.getElementById('openCookiePrefBtn');
+        if(prefBtn) {
+            prefBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                createPreferenceModal();
+            });
+        }
+        
+        // optional: load stored preferences message on console
+        const analyticsState = localStorage.getItem('cookie_pref_analytics');
+        if(analyticsState === 'false') {
+            console.log('Xterra Green Space: Analytics disabled based on user preference.');
+        }
+    })();
+</script>
+</body>
+</html>

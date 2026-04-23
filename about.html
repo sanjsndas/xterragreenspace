@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>About Us | Xterra Green Space - Yellow Theme Gardening Hub</title>
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Poppins & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef9e6;  /* soft creamy yellow base */
+            color: #2c2b28;
+            scroll-behavior: smooth;
+        }
+
+        /* yellow theme palette: golden, amber, sunflower, honey */
+        :root {
+            --yellow-soft: #FFF9C4;
+            --yellow-bright: #FFD966;
+            --yellow-deep: #F7B32B;
+            --yellow-gold: #E8A317;
+            --dark-charcoal: #2E2C2A;
+            --leaf-green: #4B6A3B;
+            --highlight: #FFC107;
+        }
+
+        h1, h2, h3, h4, .logo, .nav-links a, .footer-col h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Header & Nav */
+        header {
+            background: linear-gradient(135deg, #FFE68F 0%, #FFD966 100%);
+            padding: 20px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #2E5C1E;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: #5a3e1b;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #3b2a1f;
+            transition: 0.3s;
+            font-size: 1.05rem;
+        }
+        .nav-links a:hover {
+            color: #1f4f1a;
+            border-bottom: 2px solid #1f4f1a;
+        }
+
+        /* Page Hero (About specific) */
+        .page-hero {
+            background: linear-gradient(rgba(255,230,140,0.88), rgba(255,217,102,0.92)), url('https://picsum.photos/id/163/1600/500') center/cover no-repeat;
+            min-height: 45vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 20px;
+        }
+        .page-hero-content h2 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #2C5A1B;
+            margin-bottom: 20px;
+        }
+        .page-hero-content p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto;
+            color: #2d2a24;
+        }
+
+        /* Section styling */
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #4A6A2F;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .section-title:after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #F7B32B;
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 4px;
+        }
+        .section-sub {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 1.1rem;
+            color: #5c4a2e;
+        }
+
+        /* about-grid for mission/vision etc */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 50px 0;
+        }
+        .about-card {
+            background: #FFFFF0;
+            border-radius: 32px;
+            padding: 32px 28px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            border: 1px solid #FFE2A4;
+            transition: transform 0.25s ease;
+            text-align: center;
+        }
+        .about-card:hover {
+            transform: translateY(-6px);
+        }
+        .about-card i {
+            font-size: 3rem;
+            color: #E8A317;
+            margin-bottom: 20px;
+        }
+        .about-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #5e4017;
+        }
+        .about-card p {
+            color: #4a463f;
+            line-height: 1.6;
+        }
+
+        /* team section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .team-member {
+            background: white;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: all 0.2s;
+            border-bottom: 5px solid #FFD966;
+        }
+        .team-member img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        .team-member h4 {
+            font-size: 1.5rem;
+            margin: 20px 0 5px;
+            color: #3b5c1e;
+        }
+        .team-member p {
+            padding: 0 20px 20px;
+            color: #6b5a3e;
+            font-weight: 500;
+        }
+
+        /* story & timeline */
+        .story-block {
+            background: #FFF6E0;
+            border-radius: 60px;
+            padding: 50px 40px;
+            margin: 40px 0;
+            box-shadow: inset 0 0 0 2px #FFE6B3, 0 12px 24px rgba(0,0,0,0.02);
+        }
+        .story-block h3 {
+            font-size: 2rem;
+            color: #6B4C1A;
+            margin-bottom: 25px;
+        }
+        .story-block p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+
+        /* stats */
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            background: #FFFAEC;
+            border-radius: 50px;
+            padding: 40px 20px;
+            margin: 50px 0;
+            gap: 30px;
+        }
+        .stat-item h4 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #E8A317;
+        }
+        .stat-item p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #5a4a2a;
+        }
+
+        /* footer */
+        footer {
+            background: #2C2B26;
+            color: #FDEBB3;
+            padding: 50px 0 20px;
+            border-top: 8px solid #F7B32B;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #FFD966;
+        }
+        .footer-col p, .footer-col i {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        .footer-col a {
+            color: #FFE2A4;
+            text-decoration: none;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #5c4e34;
+            padding-top: 25px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .page-hero-content h2 {
+                font-size: 2.2rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .story-block {
+                padding: 30px 20px;
+            }
+        }
+        .btn-return {
+            background: #2C5A1B;
+            color: #FFE484;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        .btn-return:hover {
+            background: #1f4213;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <div class="logo">
+            <h1>🌻 Xterra Green Space</h1>
+            <p>where yellow blooms & evergreen wisdom meet</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <!-- Hero about section -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h2>Our Golden Roots</h2>
+            <p>Deeply connected to nature, sustainability, and the joyful energy of yellow gardens — meet the heart behind Xterra Green Space.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Mission, Vision, Values cards -->
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Our Mission</h3>
+                <p>To cultivate regenerative gardening practices that honor biodiversity, empower communities, and celebrate the healing warmth of yellow-hued landscapes. We educate, design, and nurture resilient green spaces for all.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-eye"></i>
+                <h3>Our Vision</h3>
+                <p>A world where every neighborhood blossoms with edible gardens, pollinator corridors, and golden sanctuaries that uplift the human spirit and restore ecological balance.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Our Values</h3>
+                <p>Sustainability, inclusivity, creativity & transparency. We believe in the power of organic methods, community learning, and the sunny optimism of yellow flowers to inspire change.</p>
+            </div>
+        </div>
+
+        <!-- Deep Story: The Origin of Xterra Green Space -->
+        <div class="story-block">
+            <h3>🌱 The Story Behind Xterra Green Space</h3>
+            <p>Founded in 2015 by lifelong horticulturist Elena Marigold, Xterra Green Space began as a tiny urban rooftop garden in the heart of MeadowVista. What started as an experiment in yellow-themed companion planting quickly blossomed into a movement. Elena, a master gardener with a passion for heirloom varieties, noticed that golden petals attracted not only bees but also a sense of wonder and community. Neighbors gathered to watch sunflowers turn their heads, children tasted 'Yellow Pear' tomatoes for the first time, and soon the "Golden Block Club" was born.</p>
+            <p>Over the years, Xterra Green Space expanded to a 12-acre demonstration farm, education center, and seed library. We've hosted over 350+ workshops, from permaculture design to therapeutic horticulture. Our signature 'Yellow Therapy Garden' has become a blueprint for assisted living facilities across the state. Today, we remain a grassroots organization rooted in regenerative agriculture and joyful learning. Every class, every plant sale, and every digital guide carries the same mission: to help you grow abundance with the sunniest palette on earth.</p>
+            <p>In 2022, we launched our global online gardening hub, making our research and yellow-themed resources accessible to millions. Whether you have a windowsill or an acre, Xterra Green Space walks with you — spade in hand, marigold in heart.</p>
+            <a href="index.html#tips" class="btn-return"><i class="fas fa-leaf"></i> Explore our gardening wisdom</a>
+        </div>
+
+        <!-- Team Highlights -->
+        <h2 class="section-title">🌼 Meet the Golden Team</h2>
+        <p class="section-sub">Dedicated gardeners, designers, and earth stewards — each bringing unique expertise and sunshine to our community.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://picsum.photos/id/65/400/350" alt="Elena Marigold">
+                <h4>Elena Marigold</h4>
+                <p>Founder & Chief Horticulturist 🌻<br>20+ years in organic farming, yellow specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="https://picsum.photos/id/99/400/350" alt="Samir Kapoor">
+                <h4>Samir Kapoor</h4>
+                <p>Permaculture Designer 🌿<br>Regenerative landscapes & water conservation</p>
+            </div>
+            <div class="team-member">
+                <img src="https://picsum.photos/id/26/400/350" alt="Dr. Lin Wei">
+                <h4>Dr. Lin Wei</h4>
+                <p>Soil Scientist & Researcher 🧪<br>Biochar & mycorrhizal innovations</p>
+            </div>
+            <div class="team-member">
+                <img src="https://picsum.photos/id/64/400/350" alt="Maya Flores">
+                <h4>Maya Flores</h4>
+                <p>Community Education Director 📚<br>Urban gardening & youth programs</p>
+            </div>
+        </div>
+
+        <!-- Impact Stats -->
+        <div class="stats-container">
+            <div class="stat-item">
+                <h4>12+</h4>
+                <p>Acres of Organic Gardens</p>
+            </div>
+            <div class="stat-item">
+                <h4>15k+</h4>
+                <p>Happy Community Members</p>
+            </div>
+            <div class="stat-item">
+                <h4>340+</h4>
+                <p>Workshops & Events</p>
+            </div>
+            <div class="stat-item">
+                <h4>78k+</h4>
+                <p>Words of Free Gardening Knowledge</p>
+            </div>
+        </div>
+
+        <!-- Sustainable Practices & Philosophy section (additional unique content) -->
+        <div class="story-block" style="background: #FFF9E8;">
+            <h3>💛 Our Philosophy: The Golden Thread of Regeneration</h3>
+            <p>At Xterra Green Space, we don't just garden — we cultivate relationships. The "yellow thread" symbolizes the interconnection between soil health, plant vibrancy, pollinator abundance, and human well-being. Every decision, from selecting open-pollinated seeds to hosting free seed swaps, is guided by ecological integrity. We are a plastic-free campus, using biodegradable pots, compostable labels, and rainwater-fed irrigation. Our nursery grows over 150 species of yellow-flowering natives, including threatened species like the golden monkeyflower. We practice 'carbon farming': our hedgerows and silvopasture areas sequester an estimated 24 tons of CO₂ annually. But beyond numbers, we invite you to experience the pure delight of harvesting a sun-warmed yellow squash or watching a goldfinch feast on rudbeckia seeds. That joy is why we exist.</p>
+            <p>We also advocate for food justice: through our 'Golden Harvest Share', we donate fresh produce to local food banks (over 7,200 lbs in 2024 alone). Our sliding-scale workshops ensure that low-income families have access to seeds, tools, and training. Xterra Green Space believes that gardening should be a right, not a privilege. The yellow color reminds us to be beacons of hope — resilient, radiant, and ever-growing. Join us in this movement, one seed at a time.</p>
+            <div style="margin-top: 30px;">
+                <i class="fas fa-tree" style="font-size: 2rem; color: #E8A317; margin-right: 15px;"></i>
+                <i class="fas fa-hand-peace" style="font-size: 2rem; color: #E8A317; margin-right: 15px;"></i>
+                <i class="fas fa-globe-americas" style="font-size: 2rem; color: #E8A317;"></i>
+            </div>
+        </div>
+
+        <!-- Recognition & Partners -->
+        <div style="text-align: center; margin: 60px 0 40px;">
+            <h3 style="font-size: 1.8rem; color: #6B4C1A;">🌍 Recognized By</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 35px;">
+                <div><i class="fas fa-award" style="font-size: 2.2rem; color: #F7B32B;"></i><p>Golden Trowel Award 2023</p></div>
+                <div><i class="fas fa-seedling" style="font-size: 2.2rem; color: #F7B32B;"></i><p>Pollinator Protector Certification</p></div>
+                <div><i class="fas fa-leaf" style="font-size: 2.2rem; color: #F7B32B;"></i><p>Regenerative Landscape Design Alliance</p></div>
+                <div><i class="fas fa-hand-holding-heart" style="font-size: 2.2rem; color: #F7B32B;"></i><p>Community Impact Award '24</p></div>
+            </div>
+        </div>
+
+        <!-- Testimonial / Quote block -->
+        <div style="background: #FFEBB5; border-radius: 48px; padding: 40px; margin: 40px 0; text-align: center;">
+            <i class="fas fa-quote-left" style="font-size: 2.5rem; color: #E8A317; opacity: 0.6;"></i>
+            <p style="font-size: 1.4rem; font-family: 'Playfair Display', serif; max-width: 800px; margin: 20px auto; font-style: italic;">"Xterra Green Space transformed my balcony into a buzzing, golden oasis. The workshops gave me confidence, and the yellow theme brings me joy every morning."</p>
+            <p style="font-weight: 600;">— Clara W., Home Gardener & Xterra Member</p>
+        </div>
+    </div>
+</main>
+
+<!-- Footer with address and contact details exactly as main page but consistent -->
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>Xterra Green Space</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 1420 Golden Harvest Lane, MeadowVista, CA 94123, USA</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (800) 589-2378</p>
+            <p><i class="fas fa-envelope"></i> hello@xterragreenspace.com</p>
+        </div>
+        <div class="footer-col">
+            <h3>Yellow Resources</h3>
+            <p><i class="fas fa-leaf"></i> Seed Library</p>
+            <p><i class="fas fa-sun"></i> SunCalc Pro</p>
+            <p><i class="fas fa-hand-sparkles"></i> Soil Testing Kits</p>
+        </div>
+        <div class="footer-col">
+            <h3>Visit Us</h3>
+            <p>Mon-Fri: 9am - 6pm</p>
+            <p>Sat: 10am - 4pm (Workshop Days)</p>
+            <p><i class="fab fa-instagram"></i> @xterragreenspace</p>
+        </div>
+    </div>
+    <div class="container copyright">
+        <p>&copy; 2025 Xterra Green Space — Cultivating golden futures. All gardening wisdom shared freely.</p>
+    </div>
+</footer>
+</body>
+</html>

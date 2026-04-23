@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Xterra Green Space | Privacy Policy – Your Data & Golden Garden Trust</title>
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Poppins & Playfair Display (matching main theme) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef9e6;
+            color: #2c2b28;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --yellow-soft: #FFF9C4;
+            --yellow-bright: #FFD966;
+            --yellow-deep: #F7B32B;
+            --yellow-gold: #E8A317;
+            --dark-charcoal: #2E2C2A;
+            --leaf-green: #4B6A3B;
+            --highlight: #FFC107;
+            --privacy-paper: #FFFFF5;
+        }
+
+        h1, h2, h3, h4, .logo, .nav-links a, .footer-col h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Header identical to contact page for cohesion */
+        header {
+            background: linear-gradient(135deg, #FFE68F 0%, #FFD966 100%);
+            padding: 20px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #2E5C1E;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: #5a3e1b;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #3b2a1f;
+            transition: 0.3s;
+            font-size: 1.05rem;
+        }
+        .nav-links a:hover {
+            color: #1f4f1a;
+            border-bottom: 2px solid #1f4f1a;
+        }
+
+        /* privacy hero (soft & trustworthy) */
+        .privacy-hero {
+            background: linear-gradient(120deg, #FFF6E2, #FFEFCF);
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom: 2px solid #FFDE9C;
+        }
+        .privacy-hero h1 {
+            font-size: 3rem;
+            color: #3B621F;
+            margin-bottom: 15px;
+        }
+        .privacy-hero p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto;
+            color: #5c4a2e;
+        }
+        .last-updated {
+            background: #FFF2CF;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            margin-top: 20px;
+            color: #735f38;
+        }
+
+        /* main privacy content card style */
+        .privacy-card {
+            background: var(--privacy-paper);
+            border-radius: 48px;
+            margin: 70px 0;
+            padding: 48px 50px;
+            box-shadow: 0 25px 40px rgba(0,0,0,0.05);
+            border: 1px solid #FFE2A4;
+        }
+
+        .privacy-card h2 {
+            font-size: 1.9rem;
+            color: #5e4017;
+            margin: 1.5em 0 0.8em 0;
+            border-left: 8px solid #F7B32B;
+            padding-left: 20px;
+        }
+        .privacy-card h2:first-of-type {
+            margin-top: 0;
+        }
+        .privacy-card h3 {
+            font-size: 1.4rem;
+            color: #4B6A3B;
+            margin: 1.2em 0 0.6em 0;
+            font-weight: 600;
+        }
+        .privacy-card p {
+            font-size: 1.02rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #2e2c29;
+        }
+        .privacy-card ul, .privacy-card ol {
+            margin: 1rem 0 1.2rem 2rem;
+            line-height: 1.6;
+        }
+        .privacy-card li {
+            margin-bottom: 0.5rem;
+        }
+        .privacy-card a {
+            color: #4B6A3B;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .privacy-card a:hover {
+            color: #E8A317;
+        }
+        .highlight-badge {
+            background: #FFEBB7;
+            border-radius: 60px;
+            padding: 12px 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+            color: #3B621F;
+        }
+        .divider-flower {
+            text-align: center;
+            margin: 40px 0 20px;
+            color: #FFD58C;
+            font-size: 1.2rem;
+        }
+        .contact-reminder {
+            background: #FFF3DF;
+            border-radius: 40px;
+            padding: 25px;
+            margin-top: 40px;
+            text-align: center;
+            border: 1px solid #FFE2B0;
+        }
+        /* footer same style */
+        footer {
+            background: #2C2B26;
+            color: #FDEBB3;
+            padding: 50px 0 20px;
+            border-top: 8px solid #F7B32B;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #FFD966;
+        }
+        .footer-col p, .footer-col i {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #5c4e34;
+            padding-top: 25px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .privacy-hero h1 {
+                font-size: 2.2rem;
+            }
+            .privacy-card {
+                padding: 30px 24px;
+            }
+            .privacy-card h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <div class="logo">
+            <h1>🌻 Xterra Green Space</h1>
+            <p>where yellow blooms & evergreen wisdom meet</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html" style="border-bottom: 2px solid #1f4f1a;">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="privacy-hero">
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> Privacy & Trust Policy</h1>
+            <p>Your personal data is like a delicate seed — we protect it with care, transparency, and the highest respect for your green journey.</p>
+            <div class="last-updated"><i class="far fa-calendar-alt"></i> Last updated: April 21, 2026</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="privacy-card">
+            <div class="highlight-badge">
+                <i class="fas fa-leaf"></i> Our commitment: Golden transparency & data minimalism
+            </div>
+            <p>At Xterra Green Space ("we," "us," or "our"), we believe that nurturing a garden also means nurturing trust. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, interact with our garden center, subscribe to newsletters, or contact our golden hub. Please read this policy carefully. By using our services, you consent to the data practices described herein.</p>
+
+            <h2><i class="fas fa-seedling"></i> 1. Information We Collect</h2>
+            <p>We may collect both personal and non-personal information in the following ways:</p>
+            <ul>
+                <li><strong>Personal Data:</strong> When you fill out the contact form, register for a workshop, request a consultation, or sign up for our "Golden Notes" newsletter, we may collect your name, email address, phone number, mailing address, and any message you provide. Payment information (for paid workshops or consultations) is processed via secure third-party gateways; we do not store full credit card details.</li>
+                <li><strong>Gardening Preferences:</strong> With your consent, we may ask about your gardening interests (e.g., yellow flower varieties, composting needs) to personalize our recommendations.</li>
+                <li><strong>Automatically Collected Data:</strong> Like most websites, we gather usage data such as IP address, browser type, device identifiers, pages visited, and time spent on our site. This helps us improve the user experience and track overall engagement with our garden content.</li>
+                <li><strong>Cookies & Similar Technologies:</strong> We use functional and analytical cookies (see our <a href="cookies.html">Cookies Policy</a>). You can manage cookie preferences via browser settings.</li>
+            </ul>
+
+            <h2><i class="fas fa-hand-holding-heart"></i> 2. How We Use Your Information</h2>
+            <p>We use the information collected for the following purposes, always grounded in legitimate interests and with respect for your rights:</p>
+            <ul>
+                <li>🌼 Respond to your inquiries, provide gardening advice, and send appointment confirmations.</li>
+                <li>🌻 Process workshop registrations, event tickets, or seed library requests.</li>
+                <li>📧 Send periodic newsletters, seasonal gardening tips, and special yellow-garden offers (only if you opt-in; you may unsubscribe anytime).</li>
+                <li>🛡️ Improve website security, analyze trends, and detect fraudulent activity.</li>
+                <li>🌿 Personalize your experience by suggesting relevant content (e.g., pollinator workshops, golden harvest guides).</li>
+                <li>Comply with legal obligations and enforce our terms of service.</li>
+            </ul>
+            <p>We never sell, rent, or trade your personal information to third parties for marketing purposes. Your trust is the root of our community.</p>
+
+            <h2><i class="fas fa-share-alt"></i> 3. Sharing & Disclosure</h2>
+            <p>We may share information only in limited scenarios:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> Trusted third parties who help operate our website (e.g., hosting, email delivery, analytics). These partners are contractually bound to protect your data and may not use it for any other purpose.</li>
+                <li><strong>Legal Requirements:</strong> If required by law, court order, or governmental regulation, we may disclose information to comply with legal processes.</li>
+                <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your data may be transferred. We will notify you via prominent notice on our website.</li>
+                <li><strong>With Your Consent:</strong> For any other purpose when you have given explicit permission.</li>
+            </ul>
+
+            <h2><i class="fas fa-database"></i> 4. Data Security & Retention</h2>
+            <p>We implement appropriate technical and organizational measures — including SSL encryption, regular security audits, and restricted access — to safeguard your personal information. However, no online transmission is 100% secure. We retain your data only as long as necessary to fulfill the purposes outlined in this policy or as required by law (e.g., tax records for workshop payments). Typically, contact and inquiry data is kept for 3 years, after which it is anonymized or securely deleted.</p>
+
+            <h2><i class="fas fa-user-check"></i> 5. Your Privacy Rights (CCPA, GDPR & More)</h2>
+            <p>Depending on your location (including California residents under the CCPA and individuals in the European Economic Area under the GDPR), you may have the following rights:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you.</li>
+                <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete information.</li>
+                <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request deletion of your personal data, subject to legal obligations.</li>
+                <li><strong>Right to Restrict Processing:</strong> Limit how we use your data.</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format.</li>
+                <li><strong>Right to Opt-Out of Sale/Sharing:</strong> We do not sell your data, but you may still submit a "Do Not Sell My Info" request as a formality.</li>
+                <li><strong>Right to Withdraw Consent:</strong> Where processing is based on consent, you may withdraw at any time.</li>
+            </ul>
+            <p>To exercise your rights, please contact our Data Protection Gardener at <strong>privacy@xterragreenspace.com</strong> or call +1 (800) 589-2378. We will respond within 30 days. You also have the right to lodge a complaint with your local data protection authority.</p>
+
+            <div class="divider-flower">
+                <i class="fas fa-sun"></i> <i class="fas fa-leaf"></i> <i class="fas fa-seedling"></i>
+            </div>
+
+            <h2><i class="fas fa-child"></i> 6. Children's Privacy</h2>
+            <p>Our website and services are intended for general audiences, but we love teaching young gardeners under adult supervision. We do not knowingly collect personal information from children under 13 without verifiable parental consent. If you believe a child has provided us with personal data, please contact us immediately so we can delete it.</p>
+
+            <h2><i class="fas fa-globe"></i> 7. International Data Transfers</h2>
+            <p>Xterra Green Space is based in the United States. If you are accessing our site from outside the US, please be aware that your information may be transferred to, stored, and processed in the US where our servers are located. By using our services, you consent to this transfer. We ensure appropriate safeguards (e.g., Standard Contractual Clauses where required) to protect your data.</p>
+
+            <h2><i class="fas fa-cookie-bite"></i> 8. Cookies & Tracking Technologies</h2>
+            <p>We use first-party cookies to remember your preferences (e.g., language) and third-party analytics (Google Analytics) to understand site performance. You can control cookies through your browser settings. For detailed cookie information, please review our <a href="cookies.html">Cookies Policy</a>.</p>
+
+            <h2><i class="fas fa-envelope-open-text"></i> 9. Email Communications & Newsletters</h2>
+            <p>When you subscribe to our "Golden Petals" newsletter, we use your email to send seasonal gardening stories, workshop invites, and sustainable tips. You may unsubscribe at any time by clicking the "unsubscribe" link in any email or by contacting us. We respect your inbox — no spam, only green inspiration.</p>
+
+            <h2><i class="fas fa-gavel"></i> 10. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy occasionally to reflect changes in our practices or for legal reasons. The revised version will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically. For material changes, we will provide a prominent notice on our website or via email.</p>
+
+            <div class="contact-reminder">
+                <i class="fas fa-phone-alt" style="font-size: 2rem; color: #F7B32B;"></i>
+                <h3 style="margin: 10px 0;">🌿 Questions? Our Privacy Stewards Are Here</h3>
+                <p>If you have any concerns about how your data is handled, wish to access your information, or simply want to chat about our privacy commitments, reach out to us:</p>
+                <p><strong><i class="fas fa-envelope"></i> privacy@xterragreenspace.com</strong> &nbsp;|&nbsp; <strong><i class="fas fa-phone"></i> +1 (800) 589-2378</strong><br>
+                <strong>Mail:</strong> Attn: Privacy Office, 1420 Golden Harvest Lane, MeadowVista, CA 94123, USA</p>
+                <p style="margin-top: 12px; font-size: 0.9rem;">We aim to respond within 5 business days. Your trust is our most valuable harvest.</p>
+            </div>
+            <p style="margin-top: 35px; font-style: italic; border-left: 4px solid #FFD966; padding-left: 20px;">At Xterra Green Space, we believe that protecting personal information is just as essential as nurturing the soil. Thank you for being part of our community of mindful gardeners.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>Xterra Green Space</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 1420 Golden Harvest Lane, MeadowVista, CA 94123, USA</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (800) 589-2378</p>
+            <p><i class="fas fa-envelope"></i> hello@xterragreenspace.com</p>
+        </div>
+        <div class="footer-col">
+            <h3>Yellow Resources</h3>
+            <p><i class="fas fa-leaf"></i> Seed Library</p>
+            <p><i class="fas fa-sun"></i> SunCalc Pro</p>
+            <p><i class="fas fa-hand-sparkles"></i> Soil Testing Kits</p>
+        </div>
+        <div class="footer-col">
+            <h3>Visit Us</h3>
+            <p>Mon-Fri: 9am - 6pm</p>
+            <p>Sat: 10am - 4pm (Workshop Days)</p>
+            <p><i class="fab fa-instagram"></i> @xterragreenspace</p>
+        </div>
+    </div>
+    <div class="container copyright">
+        <p>&copy; 2025 Xterra Green Space — Cultivating golden futures. All gardening wisdom shared freely.</p>
+    </div>
+</footer>
+
+<!-- optional tiny script to add dynamic current year (just for freshness) -->
+<script>
+    (function() {
+        // just for footer dynamic year update to keep modern (2025 -> actual year)
+        const yearSpan = document.querySelector('.copyright p');
+        if(yearSpan) {
+            const currentYear = new Date().getFullYear();
+            if(currentYear !== 2025) {
+                yearSpan.innerHTML = `&copy; ${currentYear} Xterra Green Space — Cultivating golden futures. All gardening wisdom shared freely.`;
+            }
+        }
+    })();
+</script>
+</body>
+</html>
